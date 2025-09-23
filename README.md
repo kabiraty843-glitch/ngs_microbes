@@ -178,6 +178,12 @@ for assembly_dir in "$Assembly"/*; do
     fi
 done
 ```
+Create a new directory to extract the AMR genes and the toxins present in the samples using abricate
+```
+nano abricate.sh
+```
+Contents of the script
+
 
 
 
