@@ -5,6 +5,7 @@
 
 
 Report on south African Polony AMR identification:
+
 This report provides an analysis of the 2017-2018 listeriosis outbreak in south Africa, which was one of the largest on record. Using whole-genome sequencing, it was confirmed that the outbreak was caused by Listeria monocytogenes.The analysis also confirmed the bacteriums's antimicrobial resistance profile and its key virulence factors. These findings were crucial in the creation of evidence based treatment recommendations to help in the guidance of recommendation of public health response.
 
 #
@@ -14,6 +15,7 @@ This report provides an analysis of the 2017-2018 listeriosis outbreak in south 
 
 
 PROCESS:
+
 making a new directory and downloading the neccessary dataset
 ```
 #making a new directory for easy access
@@ -24,6 +26,19 @@ mkdir raw_files && cd raw_files
 wget  https://raw.githubusercontent.com/HackBio-Internship/2025_project_collection/refs/heads/main/SA_Polony_100_download.sh
 ````
 Viewing the contents of the bash script
+```
+nano SA_Polony_100_download.sh
+```
+Downloading the paired end reads
+```
+bash SA_Polony_100_download.sh
+```
+#making a new scipt to carry out fastqc on all the genomes
+```
+nano qc.sh
+````
+contents of the qc.sh script
+
 
 
 
