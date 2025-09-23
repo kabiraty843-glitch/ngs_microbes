@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Define the output directory for your abricate results
+# Define the output directories for your abricate results
 OUTPUT_DIR="AMRs"
 mkdir -p "$OUTPUT_DIR"
+mkdir -p toxin_results
 
 # Loop through all directories starting with "SRR"
 for sample_dir in SRR*/; do
@@ -24,7 +25,11 @@ for sample_dir in SRR*/; do
     else
         echo "ERROR: 'contigs.fasta' not found in $sample_dir. Skipping."
     fi
-
+    # Run ABRicate for toxin/virulence genes (VFDB database)
+        echo "  Detecting toxin genes..."
+        abricate --db vfdb \
+            --quiet \
+            "$contig_path" > "$OUTPUT_DIR/toxin/${sample_name}_toxin.tsv"
 done
 
 echo "All samples analyzed. Results are in the '$OUTPUT_DIR' directory."
