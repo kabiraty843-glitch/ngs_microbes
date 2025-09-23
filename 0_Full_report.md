@@ -20,7 +20,7 @@ Making a new directory and downloading the neccessary dataset
 #making a new directory for easy access
 mkdir ngs_microbes
 #making a new directory where raw files will be and changing it to the working directory
-mkdir raw_files && cd raw_files
+mkdir raw_data && cd raw_data
 #downloading the bash script that contains all 100 genomes
 wget  https://raw.githubusercontent.com/HackBio-Internship/2025_project_collection/refs/heads/main/SA_Polony_100_download.sh
 ````
