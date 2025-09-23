@@ -37,8 +37,7 @@ for assembly_dir in "$Assembly"/*; do
             --silent
         
         success_count=$((success_count + 1))
-        echo "✓ QUAST completed for $sample_name"
     else
-        echo "✗ No contigs file found for $sample_name, skipping QUAST"
+        echo "error: No contigs file found for $sample_name, skipping QUAST"
     fi
 done
