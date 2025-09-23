@@ -56,6 +56,12 @@ run qc.sh script
 ```
 bash qc.sh
 ```
+create a bash script where trimming of paired end reads by fastp will take place
+```
+nano trim.sh
+```
+contents of the bash script
+
 
 
 
