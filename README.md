@@ -4,9 +4,9 @@
 
 
 
-REPORT ON SOUTH AFRICAN POLONY AMR AND TOXIN IDENTIFICATION:
-
-This report provides an analysis of the 2017-2018 listeriosis outbreak in south Africa, which was one of the largest on record. Using whole-genome sequencing, it was confirmed that the outbreak was caused by Listeria monocytogenes.The analysis also confirmed the bacteriums's antimicrobial resistance profile and its key virulence factors. These findings were crucial in the creation of evidence based treatment recommendations to help in the guidance of recommendation of public health response.
+**REPORT ON SOUTH AFRICAN POLONY AMR AND TOXIN IDENTIFICATION:
+**
+This report provides an analysis of the 2017-2018 listeriosis outbreak in south Africa, which was one of the largest on record. Using whole-genome sequencing, it was confirmed that the outbreak was caused by _Listeria monocytogenes_.The analysis also confirmed the bacterium's antimicrobial resistance profile and its key virulence factors. These findings were crucial in the creation of evidence based treatment recommendations to help in the guidance of recommendation of public health response.
 
 #
 
@@ -14,7 +14,7 @@ This report provides an analysis of the 2017-2018 listeriosis outbreak in south 
 
 
 
-PROCESS:
+**PROCESS:**
 
 Making a new directory and downloading the neccessary dataset
 ```
@@ -271,43 +271,48 @@ done
 echo "All samples analyzed. Results are in the '$OUTPUT_DIR' directory."
 ```
 #
-RESULTS
+**RESULTS**
 
-The bacteria strain causing the outbreak was identified as Listeria monocytogenes. It was found to contain the following Anti microbial Resistance (AMR) genes:
+The bacteria strain causing the outbreak was identified as _Listeria monocytogenes_. It was found to contain the following Anti microbial Resistance (AMR) genes:
 
-Fosfomycin resistance thiol transferase (FosX):
-
+**Fosfomycin resistance thiol transferase (FosX):**
 This gene conferring resistance to the antibiotic fosfomycin, was detected with 100 percent identity and coverage
-Lincomycin resistant ABC-F type ribosomal protection protein: 
 
-THis gene providing resistance to lincomycin and other macrolide-lincosamide-streptogramin B (MLS$_{B}$) antibiotics, was also identified with 100 percent identity and coverage.
-Multiple peptide resistance factor (MprF):
+**Lincomycin resistant ABC-F type ribosomal protection protein:** 
+This gene providing resistance to lincomycin and other macrolide-lincosamide-streptogramin B (MLS$_{B}$) antibiotics, was also identified with 100 percent identity and coverage.
 
+**Multiple peptide resistance factor (MprF):**
 it contributes to resistance against certain antibiotics like daptomycin by modifying the bacteria cell membrane to repek the drug. This same mechanism helps the bacteria evade the host's immune system's antimicrobial peptides, making it both a virulence and an AMR gene.
-norB:
 
+**norB:**
 It confers resistance to a broad range of antibiotics by acting as an efflux pump. It pumps out various drugs including macrolides, flouroquinolones and some beta-lactams thus making them ineffective.
 
-It was also found to contain the following toxins
-actA, bsh ,clpC ,clpE ,fbpA ,gtcA ,hly ,hpt ,iap/cwhA ,icl, inlA, inlB, inlC, inlF, inlK,lap, lapB, llsA,llsB, llsD, llsG,, llsH, llsP, llsX, llsY, lntA, lpeA, lplA1, lspA, oatA, pdgA, plcA, plcB,prfA ,prsA2 ,vip
+**It was also found to contain the following toxins**
 
+actA, bsh ,clpC ,clpE ,fbpA ,gtcA ,hly ,hpt ,iap/cwhA ,icl, inlA, inlB, inlC, inlF, inlK,lap, lapB, llsA,llsB, llsD, llsG,, llsH, llsP, llsX, llsY, lntA, lpeA, lplA1, lspA, oatA, pdgA, plcA, plcB,prfA ,prsA2 ,vip
+#
 These virulence factors are coordinated in a way to help:
-Evade the Immune System: Listeriolysin O (hly), a pore-forming toxin, is the key protein that allows the bacteria to escape the host cell's vacuole. This escape is critical for its survival.
-•	Invade Host Cells: The Internalin proteins (inlA, inlB, etc.) are essential for host cell invasion. They help Listeria attach to and enter cells that are not typically phagocytic.
-•	Spread Systemically: The ActA protein hijacks the host's machinery to propel the bacteria directly from one cell to another. This cell-to-cell spread makes it difficult for the host's immune system to clear the infection.
+**Evade the Immune System**: Listeriolysin O (hly), a pore-forming toxin, is the key protein that allows the bacteria to escape the host cell's vacuole. This escape is critical for its survival.
+**Invade Host Cells**: The Internalin proteins (inlA, inlB, etc.) are essential for host cell invasion. They help Listeria attach to and enter cells that are not typically phagocytic.
+**Spread Systemically**: The ActA protein hijacks the host's machinery to propel the bacteria directly from one cell to another. This cell-to-cell spread makes it difficult for the host's immune system to clear the infection.
 #
-Antibiotic Recommendations
-Based on the AMR profile, the recommended first-line therapy for a Listeria monocytogenes infection is a beta-lactam antibiotic, such as ampicillin or penicillin G. These are the standard of care for listeriosis and are not affected by the identified resistance genes. For severe infections like meningitis, combining ampicillin with an aminoglycoside like gentamicin is recommended for a synergistic effect.
-What to Avoid
-Based on your analysis and known characteristics of Listeria, the following antibiotics should be avoided:
-Fosfomycin: The presence of the FosX gene directly confers resistance to this drug.
-Lincomycin: The ABC-F ribosomal protection protein gene provides resistance to lincomycin and related antibiotics.
-Cephalosporins: Listeria monocytogenes is inherently resistant to all cephalosporins (e.g., ceftriaxone), so they are ineffective against this pathogen.
+**Antibiotic Recommendations**
+
+Based on the AMR profile, the recommended first-line therapy for a Listeria monocytogenes infection is a** beta-lactam antibiotic**, such as** ampicillin or penicillin G**. These are the standard of care for listeriosis and are not affected by the identified resistance genes. For severe infections like meningitis, combining ampicillin with an aminoglycoside like gentamicin is recommended for a synergistic effect.
 #
-Public Health Implications
+**What to Avoid**
+
+Based on the analysis and known characteristics of _Listeria_, the following antibiotics should be avoided:
+
+**Fosfomycin**: The presence of the FosX gene directly confers resistance to this drug.
+**Lincomycin**: The ABC-F ribosomal protection protein gene provides resistance to lincomycin and related antibiotics.
+**Cephalosporins**: _Listeria monocytogenes_ is inherently resistant to all cephalosporins (e.g., ceftriaxone), so they are ineffective against this pathogen.
+#
+**Public Health Implications**
 The identified genes highlight the pathogen's ability to cause severe, difficult-to-treat infections. The toxins and virulence factors (Listeriolysin O, Internalins, and ActA) enable the bacteria to evade the immune system and cause invasive diseases such as meningitis and septicemia. The AMR genes (FosX and ABC-F) further complicate treatment by limiting the choice of effective antibiotics. This underscores the need for continuous genomic surveillance to guide clinical decisions and manage the spread of antimicrobial resistance. The findings also highlight the importance of strict food safety measures, as Listeria is a foodborne pathogen particularly dangerous to vulnerable populations.
 #
-Sources
+**Sources**
+
 The information provided is based on established scientific knowledge in microbiology, infectious disease, and public health. Key sources for these findings include:
 Clinical Practice Guidelines: Recommendations from infectious disease societies such as the Infectious Diseases Society of America (IDSA).
 Bioinformatics Databases: The CARD (Comprehensive Antibiotic Resistance Database) and VFDB (Virulence Factor Database) are primary sources for gene function.
