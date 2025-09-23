@@ -36,7 +36,7 @@ awk -F'\t' '{printf "%-60s %-6s %-6s %-10s\n", $13, $3, $4, $11}' "$Blast/blast_
 
 
 # Confirm the identity of Listeria monocytogenes in the results
-if grep -q -i "listeria monocytogenes" "$Blast/blast_identification_results.tsv"; then
+if grep -q -i "Listeria monocytogenes" "$Blast/blast_identification_results.tsv"; then
     echo "Listeria monocytogenes successfully identified via BLAST"
 else
     echo "Expected organism not found"
