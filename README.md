@@ -4,7 +4,7 @@
 
 
 
-Report on south African Polony AMR identification:
+REPORT ON SOUTH AFRICAN POLONY AMR AND TOXIN IDENTIFICATION:
 
 This report provides an analysis of the 2017-2018 listeriosis outbreak in south Africa, which was one of the largest on record. Using whole-genome sequencing, it was confirmed that the outbreak was caused by Listeria monocytogenes.The analysis also confirmed the bacteriums's antimicrobial resistance profile and its key virulence factors. These findings were crucial in the creation of evidence based treatment recommendations to help in the guidance of recommendation of public health response.
 
@@ -16,7 +16,7 @@ This report provides an analysis of the 2017-2018 listeriosis outbreak in south 
 
 PROCESS:
 
-making a new directory and downloading the neccessary dataset
+Making a new directory and downloading the neccessary dataset
 ```
 #making a new directory for easy access
 mkdir ngs_microbes
@@ -38,6 +38,25 @@ bash SA_Polony_100_download.sh
 nano qc.sh
 ````
 contents of the qc.sh script
+```
+#!/bin/bash
+mkdir qc     #making a new directory where the outputs will be
+for sample in *.fastq.gz;  #for any content that has fastq.qz attached to it
+do
+       fastqc -o qc "$sample"   #run fastqc on it and put the output in qc
+done
+#create a multiqc report to aid easy viewing
+multiqc "qc" \
+--output "qc" \
+--filename "multiqc_report.html"
+--quiet
+echo "raw data quality has been assessed and multiqc report has been successfully created"
+```
+run qc.sh script
+```
+bash qc.sh
+```
+
 
 
 
