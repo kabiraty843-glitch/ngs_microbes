@@ -21,8 +21,8 @@ success_count=0
 total_count=0
 
 for assembly_dir in "$Assembly"/*; do
-    sample_name=$(basename "$assembly_dir")
-    contigs_file="$assembly_dir/contigs.fasta"
+    sample_name=$(basename "$assembly")
+    contigs_file="$assembly/contigs.fasta"
     
     total_count=$((total_count + 1))
     
