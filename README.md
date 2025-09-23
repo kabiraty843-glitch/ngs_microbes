@@ -87,6 +87,16 @@ do
 
 done
 ```
+Execute the bash script
+```
+bash trim.sh
+```
+Write a new bash script to perform De-novo assembly with spades.py
+```
+nano assembly.sh
+```
+Contents of the bash script
+```
 
 
 
