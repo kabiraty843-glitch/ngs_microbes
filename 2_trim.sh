@@ -2,6 +2,7 @@
 raw_data= ../ngs_microbes/raw_data
 
 mkdir -p trimmed  #make a new directory named trimmed
+mkdir fastp_report
 #check if the raw data exists
 if [ -z "$(ls -A $raw_data/*.fastq.gz 2>/dev/null)" ]; then
 echo "error, fastq not found"
@@ -16,8 +17,8 @@ do
           -I "$r2" \       #input 2
           -o "trimmed/${sample}_1.trimmed.fastq.gz" \    #trimmed output 1
           -O "trimmed/${sample}_2.trimmed.fastq.gz"
-          --html "$(fastp_report/$(basename)_fastp.html" \
-          --json "$(fastp_report/$(basename)_fastp.json" \
+          --html "${fastp_report}/${basename}_fastp.html" \
+          --json "${fastp_report}/${basename}_fastp.json" 
           
           #trimmed output 2
 
