@@ -63,6 +63,7 @@ contents of the bash script
 ```
 #!/bin/bash
 raw_data= ../ngs_microbes/raw_data
+mkdir fastp_reports
 
 mkdir -p trimmed  #make a new directory named trimmed
 #check if the raw data exists
@@ -78,9 +79,9 @@ do
           -i "$r1" \      #input 1
           -I "$r2" \       #input 2
           -o "trimmed/${sample}_1.trimmed.fastq.gz" \    #trimmed output 1
-          -O "trimmed/${sample}_2.trimmed.fastq.gz"
-          --html "$(fastp_report/$(basename)_fastp.html" \
-          --json "$(fastp_report/$(basename)_fastp.json" \
+          -O "trimmed/${sample}_2.trimmed.fastq.gz" \
+          --html "${fastp_report}/${basename}_fastp.html" \
+          --json "${fastp_report}/${basename}_fastp.json"
           
           #trimmed output 2
 
