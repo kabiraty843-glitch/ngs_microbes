@@ -16,7 +16,7 @@ do
           -i "$r1" \      #input 1
           -I "$r2" \       #input 2
           -o "trimmed/${sample}_1.trimmed.fastq.gz" \    #trimmed output 1
-          -O "trimmed/${sample}_2.trimmed.fastq.gz"
+          -O "trimmed/${sample}_2.trimmed.fastq.gz" \
           --html "${fastp_report}/${basename}_fastp.html" \
           --json "${fastp_report}/${basename}_fastp.json" 
           
